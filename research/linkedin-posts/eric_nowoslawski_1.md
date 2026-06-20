@@ -1,4 +1,4 @@
-# LinkedIn Post Curation: Eric Nowoslawski (Founder of GrowthX)
+# LinkedIn Post Curation: Eric Nowoslawski (Founder of Growth Engine X)
 
 * **Source Link:** [Eric Nowoslawski Profile](https://www.linkedin.com/posts/outboundphd_last-week-i-explained-to-the-sell-better-activity-7387125759213019136-y5OT?utm_source=share&utm_medium=member_desktop&rcm=ACoAADtU0J4BySzq1LPYnpqM3-Icy7zXmtMlo-U)
 * **Topic:** The 4 Tiers of AI-Generated Outbound Emails

@@ -1,29 +1,24 @@
-# LinkedIn Post Curation: Guillaume Moubeche (Founder of Lemlist)
+# LinkedIn Post Curation: Guillaume Moubeche (Founder of Lemlist) - Part 1
 
-* **Source Link:** [Guillaume Moubeche Profile](https://www.linkedin.com/posts/guillaume-moubeche-a026541b2_i-spent-2019-chasing-mentors-sent-cold-activity-7411347231750021120-bzeC?utm_source=share&utm_medium=member_desktop&rcm=ACoAADtU0J4BySzq1LPYnpqM3-Icy7zXmtMlo-U)
-* **Topic:** The Reality of Mentorship & Leveraging Public High-Signal Content
+* **Source Link:** [Guillaume Moubeche Profile](https://www.linkedin.com/posts/guillaume-moubeche-a026541b2_what-wont-make-your-startup-successful-activity-7421845939755143168-9NxL?utm_source=share&utm_medium=member_desktop&rcm=ACoAADtU0J4BySzq1LPYnpqM3-Icy7zXmtMlo-U)
+* **Topic:** Startup Success Fundamentals & The Power of Outbound
 * **Date Collected:** June 20, 2026
 
 ---
 
 ### 📝 Core Post Content
-
-> "I spent 2019 chasing mentors. Sent cold emails to successful founders I admired. Got a few meetings. You know what they told me?
-> - “You should read my book”
-> - “Did you watch my last talk?”
-> - "Just figure it out"
+> "What won’t make your startup successful: Your $5k logo designed by an “award-winning agency”, the PR firm you paid $15k to get your article in Forbes, the pitch deck you spent three weeks perfecting before you had a single user, or buying more swag so your team feels part of a 'family'.
 > 
-> At first, I was a bit frustrated. Then I realized: Everything they knew was already public.
-> - Their failures? Documented in podcasts
-> - Their strategies? Written in blog posts
-> - Their frameworks? Shared in YouTube talks
+> What will?
+> - Finding a real problem to solve
+> - Shipping a solution fast
+> - Doing outbound 
+> - Charging money on day 1
 > 
-> After generating more than $100M in sales, here's what I learned: Mentors can't give you: Work ethic, Courage to make the tough calls, Discipline to focus, Standards for excellence, Permission to succeed (THAT'S ON YOU).
-> 
-> The best mentor is your future self, disappointed by your current pace."
+> Remember: Uber didn’t start with a brand bible. Stripe’s first homepage looked like it was built in a dorm room (because it was). Airbnb started with air mattresses. You don’t need sleek. You need signal. You don’t need polish. You need payment. Fix one problem. For one type of person. With one sharp offer. That’s the game. Not branding. Not funding. Just pain, solution, and a price tag. Simple, not easy..."
 
 ---
 
-### 💡 Key Takeaways & Practical Insight for B2B SaaS Growth
-* **Information Asymmetry is Gone:** Guillaume highlights a crucial truth for modern researchers and growth hackers—high-level frameworks, distribution strategies, and tactical playbooks are already freely accessible online if you know how to search and synthesize them.
-* **Internal Execution Over External Validation:** Success in outbound pipelines or scaling a business doesn't depend on getting a meeting with a guru. It relies entirely on the internal discipline to study public data, build systems, and execute aggressively.
+### 💡 Key Takeaways for B2B SaaS
+* **Outbound as a Core Growth Engine:** Outbound pipeline creation is highlighted as a fundamental pillar for validating and growing an early-stage startup.
+* **Signal Over Polish:** Market validation through direct payment and response signals beats premium branding and expensive agency setups.

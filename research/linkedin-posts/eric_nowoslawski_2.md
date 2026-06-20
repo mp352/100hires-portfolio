@@ -1,4 +1,4 @@
-# LinkedIn Post Curation: Eric Nowoslawski (Founder of Growth Engine X.)
+# LinkedIn Post Curation: Eric Nowoslawski (Founder of Growth Engine X)
 
 * **Source Link:** [Eric Nowoslawski Profile](https://www.linkedin.com/posts/outboundphd_heres-a-new-process-weve-been-doing-for-activity-7271886318731767808-1bbb?utm_source=share&utm_medium=member_desktop&rcm=ACoAADtU0J4BySzq1LPYnpqM3-Icy7zXmtMlo-U)
 * **Core Topic:** AI Outbound Workflows, Deliverability Infrastructure, & Domain Aging
