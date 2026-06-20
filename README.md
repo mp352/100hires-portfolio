@@ -13,7 +13,7 @@ I selected **Cold Outreach Pipeline for B2B SaaS**. In modern B2B growth, outbou
 Instead of relying on top Google search results or generic marketing influencers, I strictly curated practical experts based on two core criteria: **Software Authorship** and **Active Client Execution**.
 * **Guillaume Moubeche:** As the founder of Lemlist, his insights come from processing millions of outbound emails daily. His focus on "signal over polish" provides the foundational execution framework for early-stage B2B SaaS validation.
 * **Eric Nowoslawski:** As the founder of Growth Engine X, he is at the absolute bleeding edge of programmatic outbound. His technical breakdown of using Clay for data enrichment and his innovative 4-batch inbox diversification strategy represent the modern playbook for zero-spam delivery.
-* **Nick Abraham:** Founder of Inbound Leadership (OutboundPhD), he bridges the gap between complex technical setups (SPF/DKIM/DMARC) and deep customer resonance.
+* **Nick Abraham:** Founder of Leadbird, he bridges the gap between complex technical setups (SPF/DKIM/DMARC) and deep customer resonance.
 
 ### 📁 What Was Collected & Repository Structure
 The extracted knowledge base is organized anatomically to ensure modularity and ease of reference:
