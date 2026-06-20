@@ -1,3 +1,499 @@
-[Nick Abraham - How to Build a Bulletproof Cold Email Infrastructure]
-Transcript Excerpt:
-"Alright guys, today I'm going to show you how to set up your cold email infrastructure from scratch so you never hit the spam folder. First thing you need to understand is domain authentication. You need to set up your SPF, DKIM, and DMARC records correctly. If you don't do this, Google and Microsoft will automatically block your emails. Next, don't use the same hosting provider for all your secondary domains. Diversify between Google Workspace and Microsoft 365. Finally, let the domains warm up for at least 14 days using automated warmup pools before sending a single live cold email..."
+What is going on guys? It has been over
+a year since I posted on this channel,
+but I'm back and I'm back and motivated
+to talk about managing deliverability in
+2026 as that has been a pretty hot
+topic. And I'm more motivated because my
+good friend Eric has been posting twice
+a day and has motivated me to get off my
+lazy ass and start recording videos just
+like I did a few years back. So, let's
+talk about managing deliverability in
+2026. So, in our SmartLad account, uh, I
+wrote all this out about a month ago. We
+had we had about 126,000 email accounts.
+We're actually closer to 144,000 email
+accounts as of today. And managing all
+of that takes a lot of work and there's
+a lot of things that we've learned and
+processes we've built. So, I kind of
+want to go through that. Um, so if
+you're interested, sit back, watch, and
+let's go through it. So, from an
+infrastructure standpoint, I'm a big
+believer of always sending from Google
+or Microsoft accounts. Anybody that I've
+seen doing well with SMTP always comes
+back in three months and says this is
+not working anymore. It seems like
+anytime there's a huge like I would say
+like spam filter update of some sort, um
+SMTPs fuel the burn more than Google and
+Microsoft do and just generally they
+perform better and have like way less
+variance in results. Um that's how I've
+always seen it from SMTP. So whenever
+you're buying your accounts, always buy
+from providers that are using Google or
+Microsoft. And then with the domains,
+like the TLD doesn't really matter that
+much. Like stick toss when possible.
+Like there's, you know, sales that are
+on pork bun. You know, you you can gets
+for way cheaper during these sales
+periods through these domain registars.
+So try to get dots, but we also
+use.org.info.co
+andbiz because they are cheaper. Um, the
+thing to keep in mind though is I do
+feel like they burn out a little quicker
+and and my thought process here is it's
+because it does look a little bit more
+spammy and so like you may have an
+additional person or two that marks it
+as fan span should because of that. Uh,
+but that's just kind of more of a
+thought process less than like you know
+I've done the testing and I figured that
+out. Uh, with warm-up, we recommend a
+minimum of 2 weeks. And, you know, with
+running Allegian agencies, clients want
+to get campaigns launched as soon as
+possible. And so, we're kind of forced
+to do a minimum of two weeks. But for a
+couple of our clients, we actually
+launched probably after like a month and
+a half of warm-up. And we saw those
+domains perform so much better and
+probably last a lot longer as well. But,
+you know, for most of you guys, you're
+kind of running in a crunch. So, there's
+not much to do there. And then a big
+thing I'm a believer in is kind of like
+a rotation strategy. So for every
+client, you want to buy two sets of
+infra infra in infrastructure. One that
+you use in month one and then the second
+one they use in month two. And then you
+just rotate A and B. And it's super easy
+to do this if you have a subscription
+like Hyperype for example. you can use
+their bulk uh tag updator to basically
+give half of your inboxes group A and
+your other half as group B and then you
+can assign all the inboxes to a client
+and then in smart lead it's really easy
+to filter for the client and then for
+the tag and then whenever it comes to
+like naming conventions of uh campaigns
+you could say like you know client name
+campaign industry the date that you
+launched the campaign and then the group
+that it's in. And so then you can kind
+of assess like okay like did the
+campaign do good because of the industry
+or because of deliverability or like if
+this is a proven industry with a proven
+offer and group B did bad then it's
+probably the infra issue. So it gets way
+easier to point things out like that and
+just like be able to look at an overview
+and identify things when you have it set
+up like that. Um and then if you're
+running a legion agency, I feel like a
+lot of you guys watching this probably
+run legion agencies. Um, I I highly
+recommend just having a ton of
+non-branded domains that you just have
+in the backup. And and what you can do
+here is like if your main info ever goes
+down for a client, you can swap in the
+emergency domains. And regardless of
+what provider you use, uh, we use
+hypertide. Other people will use inbox
+kit or scaled mail. There's they're all
+pretty much all the same in my opinion.
+It just comes down to customer support
+and pricing. Uh, which is where you
+should kind of identify like, you know,
+what does better or whatnot. Uh, but all
+of them at scale will somehow always
+mess up and and like this this is going
+to happen regardless, right? They're
+going to mess up the
+DNS settings here and there, right? And
+so, you always just want to make sure
+you're on your tippy toes when it comes
+to that. And so, I always recommend you
+guys sending yourself a test email and
+checking the headers before you take any
+campaign live. Uh, because that that
+stuff is like a automatic, you know,
+you're going to go to the spam if you
+don't have that set up correctly. So,
+uh, that is a one very large thing to do
+on the DNS side. So that's that's
+everything infrastructure related. Let's
+talk about campaign setup. So most of
+you guys know this, but do not track
+open. Open data is unreliable and it can
+hurt your delivery with your format.
+Just keep it plain text and very simple.
+No fancy formatting. You want it to kind
+of look like a natural email so that it
+avoids a spam filter. And then for for
+timing, um I always recommend
+just sending through the the regular
+time zones of Monday to Friday, 9 to5.
+What we like to do inside of Smartly is
+use their API and basically update the
+start time and the end time every day on
+every campaign and randomize it plus or
+30 minutes uh or plus or minus in
+between 30 minutes of the original
+launch time that we had. Super easy
+automation you could set up. And we do
+find that Saturdays are a good day to
+perform specifically when you're hitting
+like SMBs or midmarket. So that's
+something that you might want to
+consider. And then even on holidays,
+like people turn off their campaigns. I
+recommend you keep it on. Like most of
+our clients are targeting SMBs or
+mid-market. And like you know, I'm
+technically a small business owner. I
+check my emails every single day, every
+morning. That's like my first thing I
+do, check my emails. That's how it is
+with most business owners. And so you
+shouldn't feel like you can't email them
+on a Saturday or a holiday. And you
+know, you could say, "Oh, that's
+unprofessional, whatever." But it works.
+Like some of the holidays is some of the
+days we generate the most leads for
+clients. And so would highly recommend
+that. And then when it comes to the the
+lead list, couple things that I've
+noticed. One is you need to make sure
+that you format the company names
+properly. And ideally, you just don't
+use the company name at all. I find that
+whenever we have company name or title
+name inside of the campaign, we tend to
+find that it does worse. But like if you
+are going to use it, make sure that it's
+formatted properly. And like same thing
+with the titles, like you have to use AI
+to basically format it to be more uh
+normalized. So what I mean by that is
+like you're not going to ever go up to
+someone and say, "Hey, I noticed you
+you're the chief executive officer."
+You're always going to say, "I noticed
+that you were the CEO." Right? And so
+you have to catch those nuances. And
+like that's an easy example, but there's
+some titles that are pretty lengthy that
+AI sometimes can't normalize and like
+you wouldn't go there and call them
+like, "Hey, I saw that you know you're
+the director of intelligence." Um, and
+then whatever, right? Like bad example,
+but you get my point. And then the other
+thing too is I would recommend that you
+just remove all email sec people on your
+lead list that have email security,
+right? So you could use Google's three
+DNS endpoint to identify anybody that
+has like Proof Point, Barracuda, Mcast,
+any of those SCGs on your leave list,
+and I would just remove them. And if
+that makes your leave list super small,
+I recommend that you just put them at
+the end of your lead list. And a good
+way to do this is through a free tool
+that actually Omare dropped um last week
+on his website. It's
+hyperlist.hypertai.io,
+I think, something like that. go to his
+LinkedIn, you'll find it and that'll
+help you sort the list at the bottom.
+And then um when it comes to ISPs as
+well, a good thing I've noticed as well
+is when people isolate ISPs, you usually
+find that your domain gets flagged way
+quicker. So like if you remove all the
+Outlooks, you remove all the SMTPs and
+anyone else on your lead list and you
+just hammer Google. And let's say you're
+not using a ton of domains, you're not
+using a ton of spin tax, your domain
+will absolutely get flagged and every
+email you send to Google will get
+rejected. And so I do not recommend just
+isolating one provider and then and then
+doing nothing else. Um, and that happens
+when you send like a lot of volume and
+like your sequencer is kind of sending a
+majority of its volume in short blasts.
+That's whenever that happens. So that's
+something to kind of keep in mind as
+well. And then make sure you validate
+your email list with any one of the
+email validation tools. There's a
+million of them out there. We use
+million verifier. I love their API. We
+don't find that it has errors as often
+as some of the others. And yeah, like I
+I would always validate regardless if my
+because like if you look at any data
+provider, they all tell you, you know,
+emails are 90% valid or 95% valid. And
+and I never believe that. You always
+want to validate right before you launch
+the campaign. And that's a good practice
+to always have. And if you're going to
+validate your catch alls, you know, use
+scrubby, use bounce band. It doesn't
+matter which one you use, but catch alls
+typically will always have a higher
+bounce rate. And so what I recommend you
+doing is separating your campaigns. You
+should have one for your bow emails and
+then one for your valid catcholes. And
+you can moderate easier and turn off a
+campaign because with catchpholes, it's
+really hard to validate the the way that
+SMTPs are validated. And so you're going
+to find yourself having a lot of false
+positives. And so it's easier to just be
+able to see two campaigns. One is having
+a massive bounce rate. It's the cashall
+one. Let me go pause that campaign and
+not start sending to the rest of the
+cash on there so that I don't wreck my
+deliverability. That's something that I
+recommend you doing on the leadless
+level. Now with copyright, um the big
+things I would recommend is spin tax
+everything. But the the key here is you
+need to review all the different
+variants and read it out yourself. Like,
+and a lot of people don't do that. They
+just use AI to spin tax it and then they
+just kind of let it run. But here's the
+thing, AI will mess up. It will come up
+with some variants that just don't sound
+normal at all. And that will kill your
+performance, not the deliverability,
+like it having the weird spin tax
+errors. And so, just make sure you
+review the spin tax um with your copy.
+Make sure you keep it simple. no images,
+PDFs, or links in the first email. I've
+never seen that work consistently. Like,
+you may be able to run a few campaigns
+and have a better reply rate in the
+short term, but if you're trying to
+manage deliverability at scale, it's not
+worth it. But if you're like, yo, like
+if it gets me better results and I can,
+you know, allocate a bigger budget to
+infra and just be okay with it
+constantly burning out, then that's the
+game you play. And that's totally okay.
+Uh, and it may work, right? And then
+with cold emails, like I read so many
+cold emails and I think to myself, why
+would you say this? Right? Like it needs
+to pass the test of one, can a
+10-year-old read this and know exactly
+what you're selling? And then two, it
+needs to be something that you would
+actually say to someone else in person.
+Like we have customers that sell
+solutions where it's like
+like you make this sound like something
+super complicated and crazy when it's
+not that. app. Like we had a customer
+that literally will pull put like a like
+it's kind of like a a Google or a search
+bar at the bottom of your websites and
+um it allows you to like like basically
+the the offer here is like you know B2B
+buyers will come to uh your website and
+just scan if they can't find your
+information they will just dip off your
+site. But like if you have a search
+board they can just ask the question and
+find the the relevant answer. So, kind
+of a cool value prop. And the copy that
+they wanted us to run was like talking
+about like conversion rates and talking
+about like, you know, uh how it helps
+with AI SEO and all this like craziness.
+And they had some technical terms in
+there. And I was like, dude, you
+literally need to just say, "Hey, look,
+I find that a lot of B2B buyers are
+bouncing off of sites because they scan
+it and can't find the answers to their
+questions quickly. We could add a search
+bar at the bottom of your page that's
+accessible and it drives up conversions
+because it leads them right to the
+answer that they're looking for. Is that
+something you'd be interested in? Like,
+you know, it's it's that simple. You
+just have to make it conversational. Um,
+and then when it comes to
+personalization,
+I I'm a huge believer in personalization
+can help a weak offer slightly perform
+better, but it still will be the reason
+that your campaign scales. And so people
+overobsess on personalization. But if
+you had two options, having a 10 out of
+10 personalized campaign or a campaign
+with no personalization, but a great
+offer, the great offer will always
+outperform the personalization. So
+instead of trying to figure out the
+10step clay workflow to create the best
+personalization in the world, figure out
+how to make your offer better. and and
+when you have a better offer and you
+start to get more replies to your
+campaign, your deliverability is much
+easier to manage than the guy that gets
+zero responses to his campaign. So
+that's everything I would keep in mind
+for for uh copyrightiting. And now when
+it comes to actually measuring
+deliverability, um everyone has like
+their own tips and points to it. I you
+know this is what we have started we've
+started doing in Q4 that has made our
+lives a lot easier. Um, it's so much
+easier to do now today than ever before.
+Slight mostly because of of three
+reasons. One, hikerite has really good
+APIs that we're able to use that allow
+us to build a lot of the dashboards that
+we want. Smartle has a lot of APIs that
+we're able to use that help us also to
+build really cool dashboards. And then
+Lovable has made it to where we can
+build dashboards really quickly. So, I
+would say it's it's a contribution to
+those three tools. And what we do is
+we're trying to assess the domain reply
+rate comparative to the client's offer.
+And so let me explain that and and my
+thought process behind it. Like I could
+say that I want all my clients to get a
+3% reply rate because that's the average
+we're getting for the month or whatever
+it is, right? But sometimes it's
+impossible to get a client to get to
+there because of who they're selling to
+and the the offer that they have. And so
+it's unfair to think that there's a
+deliverability issue on these domains
+when in reality it's more of an offer
+and market issue. And so like we have
+clients that are getting great results
+and they have a 1% reply rate. But but
+since they're not hitting that 3% reply
+rate that we have as an agency average,
+like we think to ourselves that there's
+a deliverability issue when there isn't.
+And so I think it's so much smarter and
+better to compare the individual domain
+reply rate to the overall average that
+the client is gay. And so you can kind
+of see that in the screenshot right
+here. Let me zoom in real quick for you
+guys.
+You'll see right here, we basically have
+all of the domains and the reply rates.
+And this is the client's overall average
+reply rate. And we're looking at each
+individual domain's reply rate and
+seeing what percentage different is the
+domain comparative to the average. And
+if we see that a domain is doing 57% or
+worse or really like our rule is 40% or
+worse than the client average and is
+sent sufficient volume then we will mark
+it as questionable and then usually
+delete it and reorder it. So that's kind
+of how we think about deliverability um
+and and assessing deliverability. Um and
+and that's the key of it. Uh,
+and then I would say the other piece
+that is really useful because of
+hypertide is like how we're able to
+manage or replace domains better. And I
+really had this in my doc because I made
+the doc a month ago. So I'm stealing
+Omar's LinkedIn post. So this isn't the
+most I would say best YouTube video or
+anything by any means, but it gets the
+job done. Anyways, basically what we do
+is use hypertide relay. So, what they've
+built is a way for you to delete your
+domain, but then still be able to get
+all the replies that come to this domain
+to a preset inbox that you have. And so,
+let me kind of explain where this is
+really good. And and it kind of goes in
+tangent with uh another one of their
+solutions, which is
+I got pause real quick.
+I believe they call it hypertide
+layover. So, basically like let's say we
+have a campaign, right? and it's doing
+40% worse uh on a domain level. On that
+domain, we can actually cancel it. And
+what they do is they give you an 18-day
+grace period. So even though I delete it
+today, it's not going to delete or it's
+not going to be removed until day 18.
+And so I can still be sending from that
+inbox for the next 18 days. And what's
+good about that is that we don't have
+clients that have lower volume because
+their infra is, you know, completely
+gone and deleted. And what we can do is
+set up new infra on day one. Use the
+layover to cancel the domain. So it gets
+removed from our billing, but it's still
+active and sending. And then when we
+cancel it, we can set up the relay,
+which is now going to say, okay, on day
+18, when this inbox actually gets
+deleted, and you know, I've been sending
+from day one all the way to day 18, all
+the people that reply to your inbox from
+that day 18 is going to get forwarded to
+your new inbox that you set up. And like
+that's beautiful. That's amazing. So now
+we have like kind of like a
+self-evolving deliverability management
+system to make sure that we never run
+into issues at scale. And that's all you
+really have to do to manage
+deliverability in 2026. People will tell
+you that there's some crazy new hack or
+crazy new strategy or something that you
+need to be on the watch for, but this is
+it. And this is just like relentless
+execution of the fundamentals. And so
+that's that. But it wouldn't be me if I
+didn't pitch Lee. So, you know, if you
+guys need help with Legion, feel free to
+book a call with us at le.io
+and we will help you out. But that's it.
