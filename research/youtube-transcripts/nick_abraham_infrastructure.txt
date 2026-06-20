@@ -1,0 +1,3 @@
+[Nick Abraham - How to Build a Bulletproof Cold Email Infrastructure]
+Transcript Excerpt:
+"Alright guys, today I'm going to show you how to set up your cold email infrastructure from scratch so you never hit the spam folder. First thing you need to understand is domain authentication. You need to set up your SPF, DKIM, and DMARC records correctly. If you don't do this, Google and Microsoft will automatically block your emails. Next, don't use the same hosting provider for all your secondary domains. Diversify between Google Workspace and Microsoft 365. Finally, let the domains warm up for at least 14 days using automated warmup pools before sending a single live cold email..."
