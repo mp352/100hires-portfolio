@@ -4,7 +4,7 @@ Below is the curated list of 10 genuine practitioners and experts specializing i
 
 | No | Expert Name | Core Platform / Link | Primary Focus & Brief Annotation |
 |----|-------------|----------------------|-----------------------------------|
-| 1  | Guillaume Moubeche | [LinkedIn](linkedin.com/in/guillaume-moubeche-a026541b2/) | Founder of Lemlist. Shares real data on cold email deliverability, landing page spin-ups, and scaling outbound pipelines. |
+| 1  | Guillaume Moubeche | [LinkedIn](https://www.linkedin.com/in/guillaume-moubeche-a026541b2/) | Founder of Lemlist. Shares real data on cold email deliverability, landing page spin-ups, and scaling outbound pipelines. |
 | 2  | Nick Abraham | [YouTube](https://youtube.com/@nickabraham12?si=aMWGjacgJ_HjVYmC) | Founder of Leadbird. Provides highly technical step-by-step guides on setting up cold email infrastructure (SPF, DKIM, DMARC) and lead scraping. |
 | 3  | Eric Nowoslawski | [LinkedIn](https://www.linkedin.com/in/outboundphd/) | Founder of Growth Engine X. Expert in programmatic outbound marketing, clay.com workflows, and AI personalization at scale. |
 | 4  | Jesse Ouellette | [LinkedIn](https://www.linkedin.com/in/jesseoue/) | Founder of LeadMagic. Deep technical knowledge on modern email algorithms, workspace warming, and deliverability metrics. |
